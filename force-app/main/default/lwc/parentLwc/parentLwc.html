@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-m-around_medium">
+      -------child--------<br>
+      <br>
+    <c-child-lwc message={messageParent} onchilddata={handleparent}></c-child-lwc>
+    <br><br>
+    -------child--------
+    <br>
+    <br>
+    -------parent---------
+    <br>
+    name={name}<br>
+    color={color}<br>
+    size={size}<br>
+<lightning-button variant="brand" label="parentbutton" title="Save" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+ <br> 
+-------parent---------
+<!-- variant available (Neutral (Default), Base, Brand, Brand Outline, Destructive, Destructive Text, Success, inverse) -->  
+    </div>
+</template>
